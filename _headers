@@ -1,0 +1,33 @@
+# 允许所有来源的跨域请求
+/*
+  Access-Control-Allow-Origin: *
+
+# 允许所有请求方法
+/*
+  Access-Control-Allow-Methods: GET, POST, OPTIONS
+
+# 允许 Content-Type 请求头
+/*
+  Access-Control-Allow-Headers: Content-Type
+
+# 允许预检请求缓存时间
+/*
+  Access-Control-Max-Age: 86400
+
+# 允许所有响应头
+/*
+  Access-Control-Expose-Headers: *
+
+# 为图片路径设置相同的 CORS 头部
+/file/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: GET, POST, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+  Access-Control-Expose-Headers: *
+
+# 为上传接口设置相同的 CORS 头部
+/upload
+  Access-Control-Allow-Origin: *
+  Access-Control-Allow-Methods: POST, OPTIONS
+  Access-Control-Allow-Headers: Content-Type
+  Access-Control-Expose-Headers: *
